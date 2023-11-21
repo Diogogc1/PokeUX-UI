@@ -16,6 +16,7 @@ import NomePokemon from './components/NomePokemon';
 import TipoPokemon from './components/TipoPokemon';
 import Ataque from './components/Ataque';
 import NomeAtaque from './components/NomeAtaque';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -30,14 +31,14 @@ function App() {
             <img className="img-pokemon" src={Bulbassaur} alt="Bulbassaur" />
           </div>
 
-          <div>
+          <div className='body-card'>
             <NomePokemon nome={"Bulbassauro"} numero={"Nº001"} />
             <div className='tipo-pokemon-container'>
               <TipoPokemon icon={Leaf} type={"Research"} backgroundColor="#63BC5A" />
               <TipoPokemon icon={Poison} type={"Teste"} backgroundColor="#B567CE" />
             </div>
             <div className='descricao-pokemon'>
-              <p>Há uma semente de planta nas costas desde o dia em que este Pokémon nasce. A semente cresce de acordo com a melhoria de UX.</p>
+              <p className='descricao'>Há uma semente de planta nas costas desde o dia em que este Pokémon nasce. A semente cresce de acordo com a melhoria de UX.</p>
               <hr></hr>
             </div>
             <div>
@@ -50,19 +51,19 @@ function App() {
           </div>
         </Card>
         <Card>
-        <div className="header-card" style={{
+          <div className="header-card" style={{
             backgroundImage: `url(${backGroundCharmander})`, backgroundPosition: "center",
             backgroundSize: "cover"
           }}>
             <img className="img-pokemon" src={Charmander} alt="Charmander" />
           </div>
-          <div>
+          <div className='body-card'>
             <NomePokemon nome={"Charmander"} numero={"Nº002"} />
             <div className='tipo-pokemon-container'>
               <TipoPokemon icon={Chama} type={"Componente"} backgroundColor="#FF9D55" />
             </div>
             <div className='descricao-pokemon'>
-              <p>Tem preferência por reutilizar componentes. Quando não há padrão, diz-se que a chama da sua calda se apaga.
+              <p className='descricao'>Tem preferência por reutilizar componentes. Quando não há padrão, diz-se que a chama da sua calda se apaga.
               </p>
               <hr></hr>
             </div>
@@ -83,13 +84,13 @@ function App() {
             <img className="img-pokemon" src={Squirtle} alt="Squirtle" />
           </div>
 
-          <div>
+          <div className='body-card'>
             <NomePokemon nome={"Squirtle"} numero={"Nº003"} />
             <div className='tipo-pokemon-container'>
               <TipoPokemon icon={Gota} type={"Responsivo"} backgroundColor="#5090D6" />
             </div>
             <div className='descricao-pokemon'>
-              <p>Quando retrai seu longo pescoço em sua concha, esguicha água com força vigorosa. Adaptativo, como todo sistema deve ser.</p>
+              <p className='descricao'>Quando retrai seu longo pescoço em sua concha, esguicha água com força vigorosa. Adaptativo, como todo sistema deve ser.</p>
               <hr></hr>
             </div>
             <div>
@@ -104,6 +105,10 @@ function App() {
 
 
       </main>
+      <footer>
+        <Footer />
+      </footer>
+
     </div>
   );
 }
