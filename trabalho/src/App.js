@@ -9,6 +9,7 @@ import NomePokemon from './components/NomePokemon';
 import TipoPokemon from './components/TipoPokemon';
 import Ataque from './components/Ataque';
 import NomeAtaque from './components/NomeAtaque';
+import { Link } from 'react-router-dom'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <NavBar />
       <main className='body'>
         <Card>
+          <Link id='linkRota' to={"/batalha"}>
           <div className="header-card">
             <img className="img-pokemon" src={Bulbassaur} alt="Bulbassaur" />
           </div>
@@ -37,6 +39,7 @@ function App() {
               </div>
             </div>
           </div>
+          </Link>
         </Card>
         <Card>
           <div className="header-card">
@@ -61,8 +64,6 @@ function App() {
             </div>
           </div>
         </Card>
-        
-
       </main>
     </div>
   );
