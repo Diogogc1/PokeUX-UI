@@ -37,12 +37,11 @@
     overflow: hidden;
 }
 
-#linkRota{
+.linkRota{
     color: rgb(0, 0, 0);
     text-decoration: none;
-    position: absolute;
-    width: 250px;
 }
+
 .App {
     display: flex;
     flex-direction: column;

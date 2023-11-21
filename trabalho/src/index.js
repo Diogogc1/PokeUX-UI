@@ -17,8 +17,18 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/batalha",
+    path: "/batalha0",
     element: <Batalha tipo={0} />,
+  },
+
+  {
+    path: "/batalha1",
+    element: <Batalha tipo={1} />,
+  },
+
+  {
+    path: "/batalha2",
+    element: <Batalha tipo={2} />,
   }
 ]);
 
