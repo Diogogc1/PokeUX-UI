@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .pokemon{
@@ -19,6 +20,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#imagem{
+    height: 195px;
 }
 
 #sombra{
@@ -60,8 +65,7 @@ h2{
 }
 
 #vs{
-    height: 100px;
-    margin: 0 10px;
+    height: 110px;
 }
 
 #cardBatalha{
@@ -110,6 +114,7 @@ p{
 }
 
 #ataque{
+    cursor: pointer;
     display: flex;   
     width: 85%;
     justify-content: space-between;
@@ -117,6 +122,11 @@ p{
     padding: 10px;
     border-radius: 15px;
     font-size: 1.2em;
+    transition: 0.1s linear;
+}
+
+#ataque:hover{
+    border: 2px solid rgb(0, 0, 0);
 }
 
 #vitoria{
@@ -132,8 +142,21 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.9em;
+    font-size: 2em;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-family: 'Press Start 2P', sans-serif;
+}
+
+
+.piscar {
+    animation: piscar 0.1s infinite alternate;
+}
+  
+@keyframes piscar {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
