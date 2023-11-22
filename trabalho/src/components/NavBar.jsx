@@ -5,8 +5,17 @@ import React from "react"
 export default function NavBar() {
     return (
         <div className="navBar">
-            <img src={logo} alt="logo do pokemon"/>
-            <p className='subTitulo'>UX/UI case study</p>
+            <div className='navBarNomes'>
+                <p>Alexandre Wild</p>
+                <p>Diogo Gomes</p>
+                <p>Mathes Reis</p>
+            </div>
+            <div className='navBarTitulo'>
+                <img style={{height: '70px'}} src={logo} alt="logo do pokemon" />
+                <p className='subTitulo'>UX/UI case study</p>
+            </div>
+
+
         </div>
     )
 }
