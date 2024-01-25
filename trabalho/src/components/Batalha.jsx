@@ -176,6 +176,10 @@ export default function Batalha({tipo}){
                     </div>
                 );
             }
+
+            default: {
+                console.log('Erro ao carregar Pokémons!');
+            }
         }
     }
 } 
