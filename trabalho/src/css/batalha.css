@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inder&family=Press+Start+2P&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inder&family=Poppins:wght@500&family=Press+Start+2P&family=Roboto+Slab&display=swap');
+
+.divPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pokemons{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagem{
+    height: 195px;
+}
+
+#sombra{
+    width: 220px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.173);
+    position: relative;
+    z-index: -1;
+    bottom: 45px;
+    border-radius: 50%
+}
+
+#alinhamento{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+#vidaTotal{
+    width: 220px;
+    height: 18px;
+    border: 2px solid rgb(136, 136, 136);
+    position: relative;
+    bottom: 15px;
+}
+
+#vidaRestante{
+    height: 100%;
+    background-color: green;
+}
+
+h2{
+    margin-left: 1px;
+    position: relative;
+    bottom: 15px;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+#vs{
+    height: 110px;
+}
+
+#cardBatalha{
+    display: flex;
+    height: 160px;
+    width: 800px;
+    border: 2px solid rgb(136, 136, 136);
+    margin-top: 60px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+#descricao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 36%;
+    height: 100%;
+    border-right: 2px solid rgb(136, 136, 136);
+    padding: 25px;
+}
+
+#descricao :first-child{
+    font-size: 1.34em;
+}
+
+#NomePokemonCardBatalha{
+    align-self: flex-start;
+    color: rgb(136, 136, 136);
+    font-size: 1.1em;
+    margin-top: 6px;
+}
+
+#ataques{
+    width: 64%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+#ataque{
+    cursor: pointer;
+    display: flex;   
+    width: 85%;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    transition: 0.1s linear;
+}
+
+#ataque:hover{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#vitoria{
+    width: 800px;
+    height: 300px;
+    border: 1px solid black;
+    margin-top: 100px;
+}
+
+#link{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+.piscar {
+    animation: piscar 0.1s infinite alternate;
+}
+  
+@keyframes piscar {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
